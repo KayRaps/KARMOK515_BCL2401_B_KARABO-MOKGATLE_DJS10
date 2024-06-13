@@ -10,3 +10,6 @@ const App = () => {
         const response = await fetch(
           "https://jsonplaceholder.typicode.com/posts"
         );
+        if (!response.ok) {
+          throw new Error("Data fetching failed");
+        }
