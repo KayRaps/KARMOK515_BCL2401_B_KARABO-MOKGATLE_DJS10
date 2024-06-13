@@ -19,3 +19,6 @@ const App = () => {
         setError(error.message);
       }
     };
+
+    fetchPosts();
+  }, []);
