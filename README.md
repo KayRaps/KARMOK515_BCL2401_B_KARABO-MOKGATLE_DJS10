@@ -1,13 +1,18 @@
-Async Blog Post App
-Overview
+## Async Blog Post App
+
+## Overview
+
 Welcome to the Async Blog Post App, a React application that fetches and displays blog posts from an API. This project is designed to help you practice handling asynchronous API calls, managing application state, and error handling in a real-world scenario.
 
-Features
+## Features
+
 Fetches blog posts from an API using the Fetch API
 Displays blog posts in a list view
 Handles loading states and error messages
 Manages application state using React state and props
+
 ## Getting Started
+
 Prerequisites
 Node.js installed on your machine
 A code editor or IDE of your choice
