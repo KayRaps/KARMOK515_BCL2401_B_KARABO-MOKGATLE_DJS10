@@ -8,7 +8,7 @@ const App = () => {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "https://jsoplaceholder.typicode.com/posts"
+          "https://jsonplaceholder.typicode.com/posts"
         );
         if (!response.ok) {
           throw new Error("Data fetching failed");
@@ -27,19 +27,7 @@ const App = () => {
     <div className="App">
       <h1>Posts</h1>
       {error ? (
-        <div
-          style={{
-            color: "black",
-            fontSize: "18px", /* Adjust font size as needed */
-            fontWeight: "bold", /* Make the text bold */
-            textAlign: "center", /* Center the text horizontally */
-            position: "absolute", /* Position the error message absolutely */
-            top: "50%", /* Center vertically with transform */
-            transform: "translateY(-50%)",
-          }}
-        >
-          Error: {error}
-        </div>
+        <div style={{ color: "black" }}>Error: {error}</div>
       ) : (
         <ul style={{ listStyleType: "none", padding: 0 }}>
           {posts.map((post, index) => (
